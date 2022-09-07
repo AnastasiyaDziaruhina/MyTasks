@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyTasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vCg-Vh-KCe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyTasks Logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="tfu-nn-96c">
+                                <rect key="frame" x="32" y="323" width="350" height="250"/>
+                                <color key="tintColor" red="0.61176470589999998" green="0.41960784309999999" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAq-Id-zxH">
+                                <rect key="frame" x="186" y="776" width="42" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyTasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4R-Kf-f82">
+                                <rect key="frame" x="133" y="206" width="148" height="44.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DrG-wl-CsT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tfu-nn-96c" firstAttribute="top" secondItem="DrG-wl-CsT" secondAttribute="top" constant="279" id="0S5-WN-xCI"/>
+                            <constraint firstItem="DrG-wl-CsT" firstAttribute="bottom" secondItem="eAq-Id-zxH" secondAttribute="bottom" constant="66" id="1E8-Cm-tqu"/>
+                            <constraint firstItem="tfu-nn-96c" firstAttribute="centerY" secondItem="vCg-Vh-KCe" secondAttribute="centerY" id="4gh-Rx-e2q"/>
+                            <constraint firstItem="eAq-Id-zxH" firstAttribute="centerX" secondItem="vCg-Vh-KCe" secondAttribute="centerX" id="9rH-gr-iBY"/>
+                            <constraint firstItem="e4R-Kf-f82" firstAttribute="top" secondItem="DrG-wl-CsT" secondAttribute="top" constant="162" id="O6h-VI-L9Y"/>
+                            <constraint firstItem="e4R-Kf-f82" firstAttribute="centerX" secondItem="tfu-nn-96c" secondAttribute="centerX" id="djz-3x-Ock"/>
+                            <constraint firstItem="tfu-nn-96c" firstAttribute="leading" secondItem="DrG-wl-CsT" secondAttribute="leading" constant="32" id="fnO-IU-gng"/>
+                            <constraint firstItem="tfu-nn-96c" firstAttribute="centerX" secondItem="DrG-wl-CsT" secondAttribute="centerX" id="lo2-a7-Sgj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="tfu-nn-96c" id="G2p-NL-k15"/>
+                        <outlet property="versionLabel" destination="eAq-Id-zxH" id="Ow2-OK-qRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MyTasks Logo (1)" width="1024" height="1024"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

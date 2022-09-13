@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,30 +12,38 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SGI-5Q-wMo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" id="o4B-ms-Ia8">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyTasks Logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="fuY-kQ-GfG">
-                                <rect key="frame" x="32" y="323" width="350" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyTasks Logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="WXT-Zb-j0z">
+                                <rect key="frame" x="32" y="367" width="364" height="192"/>
                                 <color key="tintColor" red="0.61176470589999998" green="0.41960784309999999" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyTasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAZ-i6-9pc">
-                                <rect key="frame" x="133" y="206" width="148" height="44.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия: 1.0, 5000мс" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeD-FY-ddA">
+                                <rect key="frame" x="134" y="806" width="160" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyTasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0J-hu-8rD">
+                                <rect key="frame" x="140" y="249.99999999999997" width="148" height="44.666666666666657"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="xII-mL-P4F"/>
+                        <viewLayoutGuide key="safeArea" id="NCW-DR-M9l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fuY-kQ-GfG" firstAttribute="centerY" secondItem="SGI-5Q-wMo" secondAttribute="centerY" id="0Zi-WG-4sV"/>
-                            <constraint firstItem="fuY-kQ-GfG" firstAttribute="top" secondItem="xII-mL-P4F" secondAttribute="top" constant="279" id="6JD-hq-F9K"/>
-                            <constraint firstItem="IAZ-i6-9pc" firstAttribute="centerX" secondItem="fuY-kQ-GfG" secondAttribute="centerX" id="O0W-ot-f8n"/>
-                            <constraint firstItem="fuY-kQ-GfG" firstAttribute="leading" secondItem="xII-mL-P4F" secondAttribute="leading" constant="32" id="Wfk-ga-19m"/>
-                            <constraint firstItem="IAZ-i6-9pc" firstAttribute="top" secondItem="xII-mL-P4F" secondAttribute="top" constant="162" id="cl6-gR-eUD"/>
-                            <constraint firstItem="fuY-kQ-GfG" firstAttribute="centerX" secondItem="xII-mL-P4F" secondAttribute="centerX" id="nxa-VK-ayA"/>
+                            <constraint firstItem="BeD-FY-ddA" firstAttribute="centerX" secondItem="o4B-ms-Ia8" secondAttribute="centerX" id="77T-0Q-PSa"/>
+                            <constraint firstItem="A0J-hu-8rD" firstAttribute="centerX" secondItem="WXT-Zb-j0z" secondAttribute="centerX" id="9K3-0x-4R2"/>
+                            <constraint firstItem="WXT-Zb-j0z" firstAttribute="centerX" secondItem="NCW-DR-M9l" secondAttribute="centerX" id="Hnm-Pn-LWN"/>
+                            <constraint firstItem="NCW-DR-M9l" firstAttribute="bottom" secondItem="BeD-FY-ddA" secondAttribute="bottom" constant="66" id="Hut-Tr-UvA"/>
+                            <constraint firstItem="A0J-hu-8rD" firstAttribute="top" secondItem="NCW-DR-M9l" secondAttribute="top" constant="206" id="KUB-Bf-Qr1"/>
+                            <constraint firstItem="WXT-Zb-j0z" firstAttribute="centerY" secondItem="o4B-ms-Ia8" secondAttribute="centerY" id="Mtk-3a-Xrt"/>
+                            <constraint firstItem="WXT-Zb-j0z" firstAttribute="leading" secondItem="NCW-DR-M9l" secondAttribute="leading" constant="32" id="kdJ-if-vwT"/>
+                            <constraint firstItem="WXT-Zb-j0z" firstAttribute="top" secondItem="NCW-DR-M9l" secondAttribute="top" constant="323" id="zUj-8i-vhp"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -17,4 +17,26 @@ struct K {
          let settingTitle: String
          let settingsInput: String
     }
+    
+    struct TaskLabels {
+        let taskTitle: String
+        let projectTitle: String
+        let taskDate: String
+    }
+    
+    
+    struct EditorLabels {
+        
+        let editorTitle: String
+        let editorInput: String
+        
+//        let taskTitle: String
+//        let projectTitle: String
+//        let estimatedTime: String
+//        let startDate: String?
+//        let endDate: String?
+//        let status: String
+//        let workerName: String
+
+    }
 }

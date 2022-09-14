@@ -19,6 +19,8 @@
 		F0AE85A928C7BA3F00D4792B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AE85A728C7BA3F00D4792B /* Main.storyboard */; };
 		F0AE85AB28C7BA4600D4792B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AE85AA28C7BA4600D4792B /* Assets.xcassets */; };
 		F0AE85AE28C7BA4600D4792B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AE85AC28C7BA4600D4792B /* LaunchScreen.storyboard */; };
+		F0B7C4FF28D1D03C0033731C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7C4FE28D1D03C0033731C /* TaskTableViewCell.swift */; };
+		F0B7C50128D214DD0033731C /* TaskEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B7C50028D214DD0033731C /* TaskEditTableViewCell.swift */; };
 		F0F82D2728C8F1C000201CD5 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F82D2628C8F1C000201CD5 /* MainScreenVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		F0AE85AA28C7BA4600D4792B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0AE85AD28C7BA4600D4792B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AE85AF28C7BA4600D4792B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B7C4FE28D1D03C0033731C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		F0B7C50028D214DD0033731C /* TaskEditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditTableViewCell.swift; sourceTree = "<group>"; };
 		F0F82D2628C8F1C000201CD5 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,9 +61,11 @@
 				F0F82D2628C8F1C000201CD5 /* MainScreenVC.swift */,
 				F04991B628CA527000E25A50 /* AllTasksVC.swift */,
 				F04991B828CA528500E25A50 /* TaskEditVC.swift */,
+				F0B7C50028D214DD0033731C /* TaskEditTableViewCell.swift */,
 				F04991BA28CA529D00E25A50 /* SettingsVC.swift */,
 				F041994528D0D52B00C57102 /* SettingsTableViewCell.swift */,
 				F041994128D0C83700C57102 /* TasksTableVC.swift */,
+				F0B7C4FE28D1D03C0033731C /* TaskTableViewCell.swift */,
 				F041994328D0C8AD00C57102 /* StatusesVC.swift */,
 			);
 			path = Controller;
@@ -169,6 +175,7 @@
 			files = (
 				F0F82D2728C8F1C000201CD5 /* MainScreenVC.swift in Sources */,
 				F04991B928CA528500E25A50 /* TaskEditVC.swift in Sources */,
+				F0B7C4FF28D1D03C0033731C /* TaskTableViewCell.swift in Sources */,
 				F0AE85A228C7BA3F00D4792B /* AppDelegate.swift in Sources */,
 				F04991B728CA527100E25A50 /* AllTasksVC.swift in Sources */,
 				F041994228D0C83700C57102 /* TasksTableVC.swift in Sources */,
@@ -176,6 +183,7 @@
 				F04991B528CA4D9400E25A50 /* Constants.swift in Sources */,
 				F04991BB28CA529D00E25A50 /* SettingsVC.swift in Sources */,
 				F041994628D0D52B00C57102 /* SettingsTableViewCell.swift in Sources */,
+				F0B7C50128D214DD0033731C /* TaskEditTableViewCell.swift in Sources */,
 				F041994428D0C8AD00C57102 /* StatusesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,18 +10,20 @@ import UIKit
 
 class SettingsVC: UIViewController, UITableViewDataSource {
     
-    override func viewDidLoad() {
-        settingsTableView.dataSource = self
-    }
-    
     @IBOutlet weak var settingsTableView: UITableView!
     
     let data: [K.SettingsLabels] = [
         
-        K.SettingsLabels(settingTitle: "URL сервера", settingsInput: "Введите URL сервера"),
-        K.SettingsLabels(settingTitle: "Максимальное количество записей в списках", settingsInput: "Введите максимальное значение"),
-        K.SettingsLabels(settingTitle: "Количество дней по умолчанию между начальной и конечной датами в задаче", settingsInput: "Введите количество дней")
+        K.SettingsLabels(settingTitle: "URL сервера:", settingsInput: "Введите URL сервера"),
+        K.SettingsLabels(settingTitle: "Максимальное количество записей в списках:", settingsInput: "Введите максимальное значение"),
+        K.SettingsLabels(settingTitle: "Количество дней по умолчанию между начальной и конечной датами в задаче:", settingsInput: "Введите количество дней")
     ]
+    
+    override func viewDidLoad() {
+        navigationItem.title = "Настройки"
+        settingsTableView.dataSource = self
+    }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
